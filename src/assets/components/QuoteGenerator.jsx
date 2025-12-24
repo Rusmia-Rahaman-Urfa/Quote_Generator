@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { fetchRandomQuote } from "./services";
+import { fetchRandomQuote } from "./quotesApi";
 
 function QuoteGenerator() {
   const [quote, setQuote] = useState(null);
