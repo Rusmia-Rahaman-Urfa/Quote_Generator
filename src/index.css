@@ -1,0 +1,83 @@
+/* Page background */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main app container */
+.App {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.App h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Quote generator container */
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Button */
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #667eea;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a67d8;
+}
+
+button:disabled {
+  background-color: #a3bffa;
+  cursor: not-allowed;
+}
+
+/* Quote box */
+.quote-display {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Quote text */
+.quote-text {
+  font-size: 18px;
+  font-style: italic;
+  color: #333;
+}
+
+/* Author */
+.quote-author {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-weight: bold;
+}
